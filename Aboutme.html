@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" contents="Ie-edge">
+    <meta name="viewport" contents="widthdevice-width, intial-scale=1.0">
+    <title>Aboutme</title>
+    <link rel="stylesheet" href="style.css">
+    <button onclick="history.back('index.html')">Back</button>
+</head> 
+<body bgcolor="black">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p style="color:white">Hello I'm sriram from coimbatore.
+                     I pursed my higher education and degree in coimbatore.
+                    I'm interested fields like data analyst,game designing,
+                     video editing,and photographs</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('My Projects')">My Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analyst</span><br>Data Anlayst</li>
+                            <li><span>Game designer</span><br>Game Design interfaces</li>
+                            <li><span>Video Editor</span><br>Video editing</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="My projects">
+                        <ul>
+                            <li><span>Data Analyst</span><br>Soon</li>
+                            <li><span>Game designer</span><br>Soon</li>
+                            <li><span>Video Editor</span><br>Soon</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019</span><br>SSLC from RKMV(SSHSS) Coimbatore</li>
+                            <li><span>2021</span><br>Higher Education from RKMV(SSHSS) Coimbatore</li>
+                            <li><span>2024</span><br>Bsc from Kasc Coimbatore</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function  opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(content of contents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
